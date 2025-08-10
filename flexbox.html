@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            border:2px solid black;
+            flex-direction: row;
+
+        }
+
+        .box{
+            background-color: rgb(198, 158, 236);
+            border:1px solid blue;
+            padding:30px;
+            margin:5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BoxOne</div>
+        <div class="box">BoxTwo</div>
+        <div class="box">BoxThree</div>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="flex-wrap: wrap;";>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+    </div>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <div class="container" style="justify-content: flex-end;";><!--it align the main axes item -->
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        
+    </div>
+    <br>
+    <br>
+     <div class="container" style="align-items: flex-start;"><!--it align the cross axes item -->
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        
+    </div>
+    <br>
+    <br>
+    <div class="container2" style="flex-wrap: wrap; height:200px; align-content: space-around;">
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+
+    </div>
+</body>
+</html>
