@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .px-box {
+            width:200px;
+            height:200px;
+            background-color: lightgreen;
+        }
+
+        .parent {
+            width :800px;
+            background-color: aqua;
+        }
+
+        .parent-child {
+            width:50%
+        }
+
+        .em-parent{
+            font-size: 16px;
+        }
+        .em-child{
+            font-size: 2em; 
+        }
+
+        .parent-rem{
+            font-size:10px;
+        }
+        
+        .rem-child{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="px-box"> 
+        this box is 200px wide and 200px tall
+    </div>
+    <br>
+    <br>
+    <div class="parent">
+        <div class="parent-child">
+            this box is 50% wide and 50% tall
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class=" em-parent">
+        <div class="em-child">
+             this box is 2em wide
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="parent-rem">
+        <div class="rem-child">
+             this box is 2rem wide
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
