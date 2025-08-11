@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content:space-around;
+            align-items:center;
+            padding:20px;
+            background-color:#333;
+            border-radius:5px;
+        }
+
+        .box{
+            background-color: lightcoral;
+            padding: 20px;
+            font-size: 20px;
+            margin:10px;
+            border-radius:8px
+        }
+        
+
+        /* @media(orientation:landscape) also use this*/
+        @media(min-width:500px) and (max-width:900px){
+            .box{
+                font-size:30px ;
+                background-color: rgb(188, 241, 241);
+                border-radius: 30px;
+            }
+            .container{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Queries</h1>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>
